@@ -1,8 +1,15 @@
-import axios, { AxiosResponse } from "axios";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
 axios.defaults.baseURL = 'http://localhost:5000/api/';
 
 const responseBody = (response: AxiosResponse) => response.data;
+
+axios.interceptors.response.use(response => {
+  return response
+}, (error: AxiosError)=>{
+  console.log('caught by interceptor')
+  return Promise.reject(error.response);
+})
 
 const requests = {
   get: (url: string) => axios.get(url).then(responseBody),
@@ -18,7 +25,7 @@ const Catalog = {
 
 const TestErrors = {
   get400Error: () => requests.get('buggy/bad-request'),
-  get401Error: () => requests.get('buggy/unathorized'),
+  get401Error: () => requests.get('buggy/unauthorized'),
   get404Error: () => requests.get('buggy/not-found'),
   get500Error: () => requests.get('buggy/server-error'),
   getValidationError: () => requests.get('buggy/validation-error')
