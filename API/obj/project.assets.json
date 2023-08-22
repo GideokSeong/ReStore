@@ -1428,20 +1428,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kinzn\\.nuget\\packages\\": {}
+    "C:\\Users\\Charles Lee\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\kinzn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\API\\obj\\",
+      "projectPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj",
+      "packagesPath": "C:\\Users\\Charles Lee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kinzn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Charles Lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
