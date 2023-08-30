@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj": {}
+    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj": {
+    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Charles Lee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\obj\\",
+        "outputPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
