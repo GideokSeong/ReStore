@@ -148,3 +148,8 @@ C:\Users\Charles Lee\Desktop\tech practice\ReStore\api\obj\Debug\net6.0\refint\A
 C:\Users\Charles Lee\Desktop\tech practice\ReStore\api\obj\Debug\net6.0\API.pdb
 C:\Users\Charles Lee\Desktop\tech practice\ReStore\api\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Charles Lee\Desktop\tech practice\ReStore\api\obj\Debug\net6.0\ref\API.dll
+C:\Users\Charles Lee\Desktop\tech practice\ReStore\API\obj\Debug\net6.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Charles Lee\Desktop\tech practice\ReStore\API\obj\Debug\net6.0\staticwebassets\msbuild.build.API.props
+C:\Users\Charles Lee\Desktop\tech practice\ReStore\API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API.props
+C:\Users\Charles Lee\Desktop\tech practice\ReStore\API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API.props
+C:\Users\Charles Lee\Desktop\tech practice\ReStore\API\obj\Debug\net6.0\staticwebassets.pack.json
