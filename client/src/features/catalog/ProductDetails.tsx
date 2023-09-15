@@ -1,15 +1,13 @@
 import { Divider, Grid, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Product } from "../../app/models/product";
 import agent from "../../app/api/agent";
 import NotFound from "../../app/errors/NotFound";
 import LoadingComponent from "../../app/layout/LoadingComponent";
-import { useStoreContext } from "../../app/context/StoreContext";
 import { LoadingButton } from "@mui/lab";
 import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
-import { addBasketItemAsync, removeBasketAsync, setBasket } from "../basket/basketSlice";
+import { addBasketItemAsync, removeBasketItemAsync } from "../basket/basketSlice";
 
 export default function ProductDetails(){
   const {basket, status} = useAppSelector(state => state.basket);
@@ -40,7 +38,7 @@ export default function ProductDetails(){
       dispatch(addBasketItemAsync({productId: product?.id!, quantity: updateQuantity}))
       } else{
         const updatedQuantity = item.quantity - quantity;
-        dispatch(removeBasketAsync({productId: product?.id!, quantity: updatedQuantity}))
+        dispatch(removeBasketItemAsync({productId: product?.id!, quantity: updatedQuantity}))
       }
   }
   
