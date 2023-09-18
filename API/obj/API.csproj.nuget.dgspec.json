@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj": {}
+    "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj": {
+    "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Charles Lee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charles Lee\\Desktop\\tech practice\\ReStore\\API\\obj\\",
+        "projectPath": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\api\\API.csproj",
+        "packagesPath": "C:\\Users\\kinzn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kinzn\\OneDrive\\바탕 화면\\Mini Projects\\ReStore\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Charles Lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kinzn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -82,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
