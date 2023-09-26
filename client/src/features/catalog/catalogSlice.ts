@@ -68,7 +68,7 @@ export const catalogSlice = createSlice({
   reducers: {
     setProductParams: (state, action) => {
       state.productsLoaded = false;
-      state.productParams = {...state.productParams, ...}
+      state.productParams = {...state.productParams}
     }
   },
   extraReducers: (builder=>{
