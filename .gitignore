@@ -524,3 +524,5 @@ API/obj/API.csproj.nuget.dgspec.json
 API/obj/project.assets.json
 package-lock.json
 API/obj/API.csproj.nuget.g.props
+API/obj/Debug/net6.0/API.assets.cache
+API/obj/Debug/net6.0/API.GeneratedMSBuildEditorConfig.editorconfig
