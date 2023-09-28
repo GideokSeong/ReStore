@@ -1,4 +1,3 @@
-import types from "@emotion/styled";
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useState } from "react";
 
@@ -15,7 +14,7 @@ export default function CheckBoxButtons({items, checked, onChange}: Props){
     function handleChecked(value: string) {
         const currentIndex = checkedItems.findIndex(item => item === value);
         let newChecked: string[] = [];
-        if(currentIndex == -1) newChecked = [...checkedItems, value];
+        if(currentIndex === -1) newChecked = [...checkedItems, value];
         else newChecked = checkedItems.filter(item => item !== value);
         setCheckedItems(newChecked);
         onChange(newChecked);
@@ -24,7 +23,13 @@ export default function CheckBoxButtons({items, checked, onChange}: Props){
     return (
         <FormGroup>
             {items.map(item=>(
-              <FormControlLabel control={<Checkbox />} label={item} key={item}/>
+              <FormControlLabel 
+                control={<Checkbox 
+                    checked = {checkedItems.indexOf(item) !== -1}
+                    onClick = {()=>handleChecked(item)}
+                />} 
+                label={item} 
+                key={item}/>
             ))}
         </FormGroup>
     )

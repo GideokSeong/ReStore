@@ -7,7 +7,6 @@ import { LoadingButton } from "@mui/lab";
 import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
 import { addBasketItemAsync, removeBasketItemAsync } from "../basket/basketSlice";
 import { fetchProductAsync, productSelectors } from "./catalogSlice";
-import { fetchProductAsync, productSelectors } from "./catalogSlice";
 
 export default function ProductDetails(){
   const {basket, status} = useAppSelector(state => state.basket);
@@ -15,15 +14,11 @@ export default function ProductDetails(){
   const {id} = useParams<{id: string}>();
   const product = useAppSelector(state => productSelectors.selectById(state, id!));
   const {status: productStatus} = useAppSelector(state=> state.catalog);
-  const product = useAppSelector(state => productSelectors.selectById(state, id!));
-  const {status: productStatus} = useAppSelector(state=> state.catalog);
   const [quantity, setQuantity] = useState(0);
   const item = basket?.items.find(i => i.productId === product?.id);
 
   useEffect(()=>{
     if (item) setQuantity(item.quantity);
-    if (!product && id) dispatch(fetchProductAsync(parseInt(id)));
-  }, [id, item, dispatch, product])
     if (!product && id) dispatch(fetchProductAsync(parseInt(id)));
   }, [id, item, dispatch, product])
 
