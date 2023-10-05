@@ -3,6 +3,7 @@ import { User } from "../../app/models/user";
 import { FieldValues } from "react-hook-form";
 import agent from "../../app/api/agent";
 import { router } from "../../app/router/Routes";
+import { toast } from "react-toastify";
 
 interface AccountState {
     user: User | null;
@@ -26,14 +27,20 @@ export const signInUser = createAsyncThunk<User, FieldValues>(
 )
 
 export const fetchCurretUser = createAsyncThunk<User>(
-    'account/signInUser',
+    'account/fetchCurrentUser',
     async (_, thunkAPI) => {
+        thunkAPI.dispatch(setUser(JSON.parse(localStorage.getItem('user')!)));
         try{
             const user = await agent.Account.currentUser();
             localStorage.setItem('user', JSON.stringify(user));
             return user;
         }catch(error: any){
             return thunkAPI.rejectWithValue({error: error.data});
+        }
+    },
+    {
+        condition: () => {
+            if (!localStorage.getItem('user')) return false;
         }
     }
 )
@@ -46,16 +53,25 @@ export const accountSlice = createSlice({
             state.user = null;
             localStorage.removeItem('user');
             router.navigate('/');
+        },
+        setUser: (state, action) => {
+            state.user = action.payload;
         }
     },
     extraReducers: (builder => {
+        builder.addCase(fetchCurretUser.rejected, (state) => {
+            state.user = null;
+            localStorage.removeItem('user');
+            toast.error('Session Expired - Please Login Again');
+            router.navigate('/');
+        })
         builder.addMatcher(isAnyOf(signInUser.fulfilled, fetchCurretUser.fulfilled), (state, action) => {
             state.user = action.payload;
         });
-        builder.addMatcher(isAnyOf(signInUser.rejected, fetchCurretUser.rejected), (state, action) => {
+        builder.addMatcher(isAnyOf(signInUser.rejected), (state, action) => {
             console.log(action.payload);
         });
     })
 })
 
-export const {signOut} = accountSlice.actions;
+export const {signOut, setUser} = accountSlice.actions;
