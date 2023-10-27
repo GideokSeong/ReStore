@@ -558,3 +558,4 @@ API/obj/Debug/net6.0/API.assets.cache
 API/obj/project.nuget.cache
 API/obj/API.csproj.nuget.dgspec.json
 API/obj/project.nuget.cache
+API/appsettings.json
