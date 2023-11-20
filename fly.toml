@@ -18,6 +18,7 @@ primary_region = "ewr"
   auto_rollback = true  
 
 [http_service]
+  http_checks = []
   internal_port = 8080
   force_https = true
   auto_stop_machines = true
@@ -26,4 +27,4 @@ primary_region = "ewr"
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
-  
+
