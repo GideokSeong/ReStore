@@ -12,6 +12,11 @@ primary_region = "ewr"
 [env]
   ASPNETCORE_URLS="http://+:8080"
   StripeSettings__PublishableKey="pk_test_51O4rO1BVWuXEBDdYUbIkJ4yTRIyiQElUL5yB6e8igs3FKAd2WpVnYpdVHjLFR1DE9hjBdkKyO0yVfKWOMq61K7UW00PfiQxAHr"
+<<<<<<< Updated upstream
+=======
+  Cloudinary__CloudName="dzowo24he"
+  Cloudinary__ApiKey="959642637157445"
+>>>>>>> Stashed changes
 
 [experimental]
   allowed_public_ports = []
